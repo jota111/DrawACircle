@@ -1,0 +1,133 @@
+﻿/*
+* Copyright (c) CookApps.
+* 이진호(jhlee8@cookapps.com)
+*/
+
+using System;
+using Cysharp.Threading.Tasks;
+using SH.Constant;
+using SH.Data;
+using SH.Util;
+using Sirenix.OdinInspector;
+using UnityEngine;
+using UnityEngine.U2D;
+using UnityEngine.UI;
+using Zenject;
+
+namespace SH.Setting
+{
+    //[CreateAssetMenu(fileName = "AtlasSetting", menuName = "Installers/SH/AtlasSetting")]
+    public class AtlasSetting : ScriptableObjectInstaller<AtlasSetting>
+    {
+        // ReSharper disable once MemberCanBePrivate.Global
+        // ReSharper disable once UnusedAutoPropertyAccessor.Global
+        public static AtlasSetting Instance { get; private set; }
+
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        private static void DomainCleanup()
+        {
+            Instance = null;
+        }
+        
+        [SerializeField, ValidateInput(nameof(Valid))] private AtlasDict _atlas;
+
+        private bool Valid(AtlasDict dict) => ProjectValid.Valid(dict);
+
+        public SpriteAtlas GetAtlas(AtlasType type)
+        {
+            _atlas.TryGetValue(type, out var atlas);
+            return atlas;
+        }
+
+        public Sprite GetSprite(AtlasType typeEnum, string spriteName)
+        {
+            return string.IsNullOrEmpty(spriteName) ? null : GetAtlas(typeEnum)?.GetSprite(spriteName);
+        }
+
+        public Sprite GetItemIcon(ItemType type)
+        {
+            // 스프라이트는 이름 같다
+            var data = DataItem.GetData(type);
+            var sprite = GetSprite(AtlasType.InGame, data.Name);
+            if (sprite == null)
+            {
+                Debug.LogError($"not found item sprite : {data.Name}");
+            }
+            return sprite;
+        }
+
+        /// <summary>
+        /// 아이템 아이콘 부모의 크기에 맞게 자동 사이즈 적용
+        /// </summary>
+        /// <param name="type"></param>
+        /// <param name="image"></param>
+        public async void SetItemIcon(ItemType type, Image image)
+        {
+            if(image == null)
+                return;
+
+            await UniTask.WaitForEndOfFrame(image.GetCancellationTokenOnDestroy());
+
+            var parent = image.transform.parent.GetComponent<RectTransform>();
+            var maxHeight = parent.rect.height;
+            
+            var aspectRatioFitterIcon = image.gameObject.GetComponentOrAdd<AspectRatioFitter>();
+            aspectRatioFitterIcon.aspectMode = AspectRatioFitter.AspectMode.FitInParent;
+            
+            var sprite = GetItemIcon(type);
+            image.sprite = sprite;
+            image.useSpriteMesh = true;
+
+            if (sprite == null)
+                return;
+
+            var rect = sprite.rect;
+            if (maxHeight < rect.height)
+            {
+                aspectRatioFitterIcon.enabled = true;
+                var ratio = rect.width / rect.height;
+                aspectRatioFitterIcon.aspectRatio = ratio;
+            }
+            else
+            {
+                aspectRatioFitterIcon.enabled = false;
+                image.rectTransform.anchorMin = Vector2.one * 0.5f;
+                image.rectTransform.anchorMax = Vector2.one * 0.5f;
+                image.SetNativeSize();
+                var size = sprite.rect.size;
+                image.rectTransform.pivot = sprite.pivot / size;
+                image.rectTransform.anchoredPosition = Vector2.zero;
+            }
+        }
+
+        public Sprite GetShopIcon(string key)
+        {
+            var sprite = GetSprite(AtlasType.Shop, key);
+            return sprite;
+        }
+
+<<<<<<< HEAD
+        public Sprite GetEventCustomer(string key)
+        {
+            var sprite = GetSprite(AtlasType.EventCustomer, key);
+=======
+        public Sprite GetOutGameIcon(string key)
+        {
+            var sprite = GetSprite(AtlasType.OutGame, key);
+>>>>>>> 2b8ca0cf3e5d8696e164cdd91f6fcf5b42a7024f
+            return sprite;
+        }
+
+        public override void InstallBindings()
+        {
+            Container.BindInstance(this).AsSingle();
+            Instance = this;
+        }
+
+        [Serializable]
+        public class AtlasDict : UnitySerializedDictionary<AtlasType, SpriteAtlas>
+        {
+          
+        }
+    }
+}

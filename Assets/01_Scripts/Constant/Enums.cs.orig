@@ -1,0 +1,548 @@
+﻿/*
+* Copyright (c) CookApps.
+* 이진호(jhlee8@cookapps.com)
+*/
+
+using Beebyte.Obfuscator;
+
+namespace SH.Constant
+{
+    [SkipRename]
+    public enum Currencies
+    {
+        None,
+        Coin = 1,
+        Diamond = 2,
+        XP = 3,
+        Energy = 4,
+        EventCoin = 5,
+    }
+
+    public enum MergeBoardIdent
+    {
+        None,
+        Main,
+        LemonTree,
+        Event,
+        Test,
+        Editor1 = 1001,
+    }
+    
+    public enum ItemVisibility
+    {
+        Visible,
+        HiddenWithVisibleInside
+    }
+
+    public class ZenId
+    {
+        public const string InGame = "InGame";
+        public const string Board = "Board";
+        public const string Facade = "Facade";
+        public const string BoardEffectParent = "BoardEffectParent";
+        public const string MergeItemParent = "MergeItemParent";
+        public const string MergeItemMoveParent = "MergeItemMoveParent";
+        public const string TestRunnerEditMode = "TestRunnerEditMode";
+        public const string ButtonStack = "ButtonStack";
+        public const string RectTransformLevel = "RectTransformLevel";
+        public const string RectTransformGold = "RectTransformGold";
+        public const string RectTransformJewel = "RectTransformJewel";
+        public const string RectTransformEnergy = "RectTransformEnergy";
+        public const string RectTransformMainBoardButton = "RectTransformMainBoardButton";
+        public const string RectTransformEventBoardButton = "RectTransformEventBoardButton";
+        public const string RectTransformLobbyButton = "RectTransformLobbyButton";
+        public const string RectTransformGetEffectParent = "RectTransformGetEffectParent";
+        public const string RectTransformOpenChest = "RectTransformOpenChest";
+        public const string RectTransformQuestButton = "RectTransformQuestButton";
+        public const string RectTransformQuestButtonInGame = "RectTransformQuestButtonInGame";
+        public const string RectTransformInventoryButton = "RectTransformInventoryButton";
+        public const string RectTransformQuestRewardCompleteButton = "RectTransformQuestRewardCompleteButton";
+        public const string BoardEditor = "BoardEditor";
+        public const string TopUI = "TopUI";
+        public const string RectTransformSettingButton = "RectTransformSettingButton";
+        public const string RectTransformMailboxButton = "RectTransformMailboxButton";
+        public const string RectTransformEventBoardButtonInGame = "RectTransformEventBoardButtonInGame";
+    }
+
+    public enum AtlasType
+    {
+        InGame,
+        Shop,
+<<<<<<< HEAD
+        EventCustomer,
+=======
+        OutGame,
+>>>>>>> 2b8ca0cf3e5d8696e164cdd91f6fcf5b42a7024f
+    }
+
+    public enum AreaType
+    {
+        NearHorizontalAndVertical,
+        Near1x1,
+        Near3x3
+    }
+
+    public enum ItemSpawnType
+    {
+        /// <summary>
+        /// 기본
+        /// </summary>
+        Exist,
+        /// <summary>
+        /// 머지 생성
+        /// </summary>
+        Merge,
+        /// <summary>
+        /// 가방
+        /// </summary>
+        Inventory,
+        /// <summary>
+        /// 특정 슬롯으로 부터
+        /// </summary>
+        Coord,
+        /// <summary>
+        /// 대기열로 부터
+        /// </summary>
+        Stack,
+        /// <summary>
+        /// 버블
+        /// </summary>
+        Bubble,
+        /// <summary>
+        /// 판매 복원
+        /// </summary>
+        UndoSale,
+        /// <summary>
+        /// 일회용 생산물 소모
+        /// </summary>
+        Consumed,
+        /// <summary>
+        /// 숨겨져있다 보인
+        /// </summary>
+        Unhidden,
+        Unlock,
+        SelfLevelUp,
+    }
+
+    public enum ChestState
+    {
+        NotOpen,
+        Opening,
+        Opened,
+    }
+
+    public enum ScreenState
+    {
+        Lobby,
+        InGame,
+    }
+
+    [Skip]
+    public enum ItemCategory
+    {
+        Gold = 30,
+        XP = 60,
+        Jewel = 90,
+        Energy = 120,
+        BrownChest = 150,
+        BlueChest = 180,
+        GoldChest = 210,
+        EnergyBox = 240,
+        Bank = 270,
+        TimeSkip = 300,
+        GardenTool = 330,
+        GardenGloves = 360,
+        GardenToolbox = 390,
+        Terrarium = 420,
+        Flowerpot = 450,
+        SeedPouch = 480,
+        EmptySeedPouch = 510,
+        Flower = 540,
+        StoneBasket = 570,
+        Tile = 600,
+        Brick = 630,
+        Thread = 660,
+        GardeningPack = 690,
+        ToolPack = 720,
+        CleaningPack = 750,
+        SeedPack = 780,
+        CleaningToolbox = 810,
+        CleaningTool = 840,
+        Cleansers = 870,
+        ToolBox = 900,
+        Tools = 930,
+        Screws = 960,
+        Paint = 990,
+        MagicTimer = 1020,
+        Bench = 1050,
+        Statue = 1080,
+        Fond = 1110,
+        LemonBag = 1140,
+        Tree = 1170,
+        Logs = 1200,
+        Light = 1230,
+        LemonTree = 6000,
+        LemonLeaf = 6030,
+        LemonFlower = 6060,
+        Lemon = 6090,
+        LemonSyrup = 6120,
+        LemonPeel = 6150,
+        Lemonflesh = 6180,
+        LemonSeed = 6210,
+        LemonFood = 6240,
+        LemonSoap = 6270,
+        LemonCosmetic = 6300,
+        Event_XP = 6330,
+        Butterfly = 1260,
+    }
+
+    [Skip]
+    public enum ItemType
+    {
+        Gold_01 = 31,
+        Gold_02 = 32,
+        Gold_03 = 33,
+        Gold_04 = 34,
+        Gold_05 = 35,
+        Gold_06 = 36,
+        Jewel_01 = 91,
+        Jewel_02 = 92,
+        Jewel_03 = 93,
+        Jewel_04 = 94,
+        XP_01 = 61,
+        XP_02 = 62,
+        XP_03 = 63,
+        XP_04 = 64,
+        XP_05 = 65,
+        TimeSkip_01 = 301,
+        TimeSkip_02 = 302,
+        TimeSkip_03 = 303,
+        TimeSkip_04 = 304,
+        TimeSkip_05 = 305,
+        TimeSkip_06 = 306,
+        TimeSkip_07 = 307,
+        TimeSkip_08 = 308,
+        TimeSkip_09 = 309,
+        GoldChest_01 = 211,
+        EnergyBox_01 = 241,
+        Energy_01 = 121,
+        Energy_02 = 122,
+        Energy_03 = 123,
+        Energy_04 = 124,
+        Energy_05 = 125,
+        BlueChest_01 = 181,
+        BlueChest_02 = 182,
+        GardenTool_01 = 331,
+        GardenTool_02 = 332,
+        GardenTool_03 = 333,
+        GardenTool_04 = 334,
+        GardenTool_05 = 335,
+        GardenTool_06 = 336,
+        GardenTool_07 = 337,
+        GardenTool_08 = 338,
+        GardenTool_09 = 339,
+        GardenTool_10 = 340,
+        GardenTool_11 = 341,
+        GardenTool_12 = 342,
+        GardenTool_13 = 343,
+        GardenTool_14 = 344,
+        GardenTool_15 = 345,
+        GardenGloves_01 = 361,
+        GardenGloves_02 = 362,
+        GardenGloves_03 = 363,
+        GardenToolbox_01 = 391,
+        GardenToolbox_02 = 392,
+        GardenToolbox_03 = 393,
+        GardenToolbox_04 = 394,
+        GardenToolbox_05 = 395,
+        GardenToolbox_06 = 396,
+        GardenToolbox_07 = 397,
+        GardenToolbox_08 = 398,
+        GardenToolbox_09 = 399,
+        GardenToolbox_10 = 400,
+        Terrarium_01 = 421,
+        Terrarium_02 = 422,
+        Terrarium_03 = 423,
+        Terrarium_04 = 424,
+        Terrarium_05 = 425,
+        Terrarium_06 = 426,
+        Terrarium_07 = 427,
+        Flowerpot_01 = 451,
+        Flowerpot_02 = 452,
+        Flowerpot_03 = 453,
+        Flowerpot_04 = 454,
+        Flowerpot_05 = 455,
+        Flowerpot_06 = 456,
+        Flowerpot_07 = 457,
+        Flowerpot_08 = 458,
+        Flowerpot_09 = 459,
+        Flowerpot_10 = 460,
+        SeedPouch_01 = 481,
+        SeedPouch_02 = 482,
+        SeedPouch_03 = 483,
+        SeedPouch_04 = 484,
+        EmptySeedPouch_01 = 511,
+        EmptySeedPouch_02 = 512,
+        EmptySeedPouch_03 = 513,
+        EmptySeedPouch_04 = 514,
+        Thread_01 = 661,
+        LemonBag_01 = 1141,
+        LemonBag_02 = 1142,
+        LemonBag_03 = 1143,
+        LemonBag_04 = 1144,
+        LemonBag_05 = 1145,
+        LemonBag_06 = 1146,
+        LemonBag_07 = 1147,
+        Flower_01 = 541,
+        Flower_02 = 542,
+        Flower_03 = 543,
+        Flower_04 = 544,
+        Flower_05 = 545,
+        Flower_06 = 546,
+        StoneBasket_01 = 571,
+        StoneBasket_02 = 572,
+        StoneBasket_03 = 573,
+        StoneBasket_04 = 574,
+        StoneBasket_05 = 575,
+        StoneBasket_06 = 576,
+        StoneBasket_07 = 577,
+        Tile_01 = 601,
+        Tile_02 = 602,
+        Tile_03 = 603,
+        Brick_01 = 631,
+        Brick_02 = 632,
+        Brick_03 = 633,
+        Brick_04 = 634,
+        Brick_05 = 635,
+        Brick_06 = 636,
+        GardeningPack_01 = 691,
+        ToolPack_01 = 721,
+        CleaningPack_01 = 751,
+        SeedPack_01 = 781,
+        BrownChest_01 = 151,
+        BrownChest_02 = 152,
+        Bank_01 = 271,
+        Bank_02 = 272,
+        Bank_03 = 273,
+        CleaningToolbox_01 = 811,
+        CleaningToolbox_02 = 812,
+        CleaningToolbox_03 = 813,
+        CleaningToolbox_04 = 814,
+        CleaningToolbox_05 = 815,
+        CleaningToolbox_06 = 816,
+        CleaningToolbox_07 = 817,
+        CleaningToolbox_08 = 818,
+        CleaningToolbox_09 = 819,
+        CleaningToolbox_10 = 820,
+        CleaningTool_01 = 841,
+        CleaningTool_02 = 842,
+        CleaningTool_03 = 843,
+        CleaningTool_04 = 844,
+        CleaningTool_05 = 845,
+        CleaningTool_06 = 846,
+        CleaningTool_07 = 847,
+        CleaningTool_08 = 848,
+        CleaningTool_09 = 849,
+        CleaningTool_10 = 850,
+        CleaningTool_11 = 851,
+        CleaningTool_12 = 852,
+        Cleansers_01 = 871,
+        Cleansers_02 = 872,
+        Cleansers_03 = 873,
+        Cleansers_04 = 874,
+        Cleansers_05 = 875,
+        Cleansers_06 = 876,
+        Cleansers_07 = 877,
+        ToolBox_01 = 901,
+        ToolBox_02 = 902,
+        ToolBox_03 = 903,
+        ToolBox_04 = 904,
+        ToolBox_05 = 905,
+        ToolBox_06 = 906,
+        ToolBox_07 = 907,
+        ToolBox_08 = 908,
+        ToolBox_09 = 909,
+        ToolBox_10 = 910,
+        Tools_01 = 931,
+        Tools_02 = 932,
+        Tools_03 = 933,
+        Tools_04 = 934,
+        Tools_05 = 935,
+        Tools_06 = 936,
+        Tools_07 = 937,
+        Tools_08 = 938,
+        Tools_09 = 939,
+        Tools_10 = 940,
+        Tools_11 = 941,
+        Screws_01 = 961,
+        Screws_02 = 962,
+        Screws_03 = 963,
+        Screws_04 = 964,
+        Screws_05 = 965,
+        Paint_01 = 991,
+        Paint_02 = 992,
+        Paint_03 = 993,
+        Paint_04 = 994,
+        MagicTimer_01 = 1021,
+        MagicTimer_02 = 1022,
+        MagicTimer_03 = 1023,
+        MagicTimer_04 = 1024,
+        MagicTimer_05 = 1025,
+        MagicTimer_06 = 1026,
+        MagicTimer_07 = 1027,
+        MagicTimer_08 = 1028,
+        Bench_01 = 1051,
+        Bench_02 = 1052,
+        Bench_03 = 1053,
+        Bench_04 = 1054,
+        Bench_05 = 1055,
+        Bench_06 = 1056,
+        Bench_07 = 1057,
+        Bench_08 = 1058,
+        Statue_01 = 1081,
+        Statue_02 = 1082,
+        Statue_03 = 1083,
+        Statue_04 = 1084,
+        Statue_05 = 1085,
+        Statue_06 = 1086,
+        Statue_07 = 1087,
+        Statue_08 = 1088,
+        Statue_09 = 1089,
+        Statue_10 = 1090,
+        Statue_11 = 1091,
+        Statue_12 = 1092,
+        Statue_13 = 1093,
+        Fond_01 = 1111,
+        Fond_02 = 1112,
+        Fond_03 = 1113,
+        Fond_04 = 1114,
+        Fond_05 = 1115,
+        Fond_06 = 1116,
+        Fond_07 = 1117,
+        Tree_01 = 1171,
+        Tree_02 = 1172,
+        Tree_03 = 1173,
+        Tree_04 = 1174,
+        Tree_05 = 1175,
+        Tree_06 = 1176,
+        Tree_07 = 1177,
+        Tree_08 = 1178,
+        Logs_01 = 1201,
+        Logs_02 = 1202,
+        Logs_03 = 1203,
+        Light_01 = 1231,
+        Light_02 = 1232,
+        Light_03 = 1233,
+        Light_04 = 1234,
+        Light_05 = 1235,
+        Light_06 = 1236,
+        Butterfly_01 = 1261,
+        Butterfly_02 = 1262,
+        Butterfly_03 = 1263,
+        Butterfly_04 = 1264,
+        Butterfly_05 = 1265,
+        Butterfly_06 = 1266,
+
+        LemonTree_01 = 6001,
+        LemonTree_02 = 6002,
+        LemonTree_03 = 6003,
+        LemonTree_04 = 6004,
+        LemonTree_05 = 6005,
+        LemonTree_06 = 6006,
+        LemonTree_07 = 6007,
+        LemonTree_08 = 6008,
+        LemonTree_09 = 6009,
+        LemonLeaf_01 = 6031,
+        LemonLeaf_02 = 6032,
+        LemonLeaf_03 = 6033,
+        LemonLeaf_04 = 6034,
+        LemonFlower_01 = 6061,
+        LemonFlower_02 = 6062,
+        LemonFlower_03 = 6063,
+        Lemon_01 = 6091,
+        Lemonflesh​_02 = 6182,
+        Lemonflesh​_03 = 6183,
+        Lemonflesh​_04 = 6184,
+        Lemonflesh​_05 = 6185,
+        Lemonflesh​_06 = 6186,
+        Lemonflesh​_07 = 6187,
+        Lemonflesh​_08 = 6188,
+        LemonPeel_01 = 6151,
+        LemonPeel_02 = 6152,
+        Lemonflesh​_01 = 6181,
+        LemonSeed_01 = 6211,
+        LemonFood_01 = 6241,
+        LemonFood_02 = 6242,
+        LemonFood_03 = 6243,
+        LemonFood_04 = 6244,
+        LemonFood_05 = 6245,
+        LemonFood_06 = 6246,
+        LemonFood_07 = 6247,
+        LemonFood_08 = 6248,
+        LemonFood_09 = 6249,
+        LemonSoap_01 = 6271,
+        LemonSoap_02 = 6272,
+        LemonSoap_03 = 6273,
+        LemonSoap_04 = 6274,
+        LemonSoap_05 = 6275,
+        LemonSoap_06 = 6276,
+        LemonSoap_07 = 6277,
+        LemonSoap_08 = 6278,
+        LemonCosmetic_01 = 6301,
+        LemonCosmetic_02 = 6302,
+        LemonCosmetic_03 = 6303,
+        LemonCosmetic_04 = 6304,
+        LemonCosmetic_05 = 6305,
+        LemonCosmetic_06 = 6306,
+        LemonCosmetic_07 = 6307,
+        LemonCosmetic_08 = 6308,
+        LemonCosmetic_09 = 6309,
+        Event_XP_01 = 6331,
+        Event_XP_02 = 6332,
+        Event_XP_03 = 6333,
+        Event_XP_04 = 6334,
+        Event_XP_05 = 6335,
+    }
+
+    public enum TutorialStep
+    {
+        Merge_1_GardenToolBox01 = 1,
+        Merge_1_GardenToolBox02,
+        Merge_1_GardenToolBox03,
+        Merge_1_GardenGloves01,
+        Merge_1_GardenGloves02,
+        
+        Merge_2_GardenTool01,
+        Merge_2_GardenTool02,
+        
+
+        Merge_3_GardenTool01,
+        Merge_3_GardenTool02,
+        Merge_3_GardenTool03,
+
+        OpenChest,
+        ProductItem1,
+        ProductItem2,
+        ProductItem3,
+        Quest1000,
+        Quest1020,
+        Quest1030,
+        QuestClear1000,
+        QuestClear1020,
+        QuestClear1030,
+        StackItemBlueChest01,
+        LevelUp,
+        UnlockShopSale,
+        UnlockShopInven,
+    }
+
+    public enum PrefabType
+    {
+        // Effect
+        Effect_MergeAble = 101,
+        /// <summary>
+        /// 머지 아이템 파되 효과
+        /// </summary>
+        Effect_DestroyMergeItem,
+    }
+}

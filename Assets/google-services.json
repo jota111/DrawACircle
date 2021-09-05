@@ -1,0 +1,84 @@
+{
+  "project_info": {
+    "project_number": "815731226145",
+    "project_id": "sunny-house-68dc1",
+    "storage_bucket": "sunny-house-68dc1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815731226145:android:9a16949912f6a2174c1560",
+        "android_client_info": {
+          "package_name": "com.cookapps.sunnyhouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815731226145-irbvvgmvm5i91mgp59m4l06fgd9qbee5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx1E9wddGS2HCM1lCwKjg0kpGj47q_iVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815731226145-irbvvgmvm5i91mgp59m4l06fgd9qbee5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "815731226145-b4d7ng4f2a59fosatintrpb8tknmv18a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cookapps.interiors.home.design.merge.sunnyhouse",
+                "app_store_id": "1573861950"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815731226145:android:50cac1f327da85304c1560",
+        "android_client_info": {
+          "package_name": "com.cookapps.sunnyhouse_aws"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815731226145-irbvvgmvm5i91mgp59m4l06fgd9qbee5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx1E9wddGS2HCM1lCwKjg0kpGj47q_iVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815731226145-irbvvgmvm5i91mgp59m4l06fgd9qbee5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "815731226145-b4d7ng4f2a59fosatintrpb8tknmv18a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cookapps.interiors.home.design.merge.sunnyhouse",
+                "app_store_id": "1573861950"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
