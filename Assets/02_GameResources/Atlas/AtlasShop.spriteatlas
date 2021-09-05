@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AtlasShop
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 49
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: c93e001ba3097e941bdb01726a464e44, type: 3}
+    totalSpriteSurfaceArea: 1625004
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 9460ecb0ab607b44fa852c269da7917d, type: 3}
+  - {fileID: 21300000, guid: 9440c961a2293984a9f6a841ca0338d3, type: 3}
+  - {fileID: 21300000, guid: d35d62a157259d74c8e39278941a5534, type: 3}
+  - {fileID: 21300000, guid: 2e92c8c1d583bfd4e83f9aad8bee00f5, type: 3}
+  - {fileID: 21300000, guid: 9b096752e4ffb304db8d9a9afd033b37, type: 3}
+  - {fileID: 21300000, guid: 074a1593bd79f764fad35111f8c14fa4, type: 3}
+  - {fileID: 21300000, guid: 139b0734c130c354abb14805809e02f6, type: 3}
+  - {fileID: 21300000, guid: 9157b1b4d30c28441a7fa35f1c6631bc, type: 3}
+  - {fileID: 21300000, guid: 1ad83e154b662a14d85e37f2af8d5837, type: 3}
+  - {fileID: 21300000, guid: 9d822a77bcdf1054388fb1a9122c3745, type: 3}
+  - {fileID: 21300000, guid: 4944cfa77c5102044bfa79839f72139b, type: 3}
+  - {fileID: 21300000, guid: 5a38447837a8635458fc85d2f7228a4c, type: 3}
+  - {fileID: 21300000, guid: dc1de77943bb9d04aa1b2a206cc9ee15, type: 3}
+  - {fileID: 21300000, guid: b4dd687b867ed4b43876fc04a7d33729, type: 3}
+  - {fileID: 21300000, guid: 91a8221c5a1d626428dabe3376d49c3e, type: 3}
+  - {fileID: 21300000, guid: 30723a7cbfe11f5418afcd1630782f8f, type: 3}
+  - {fileID: 21300000, guid: 723d290d765c27f4db9262bb6ca78645, type: 3}
+  - {fileID: 21300000, guid: 0c0f548e869cda8449c8b125fd83955e, type: 3}
+  - {fileID: 21300000, guid: ba9680bf8a072e64fa5a35291c5e18c3, type: 3}
+  - {fileID: 21300000, guid: 2fd2f8ff6fab4f94e984f735e695eb47, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - img_package_FlowerSeeds
+  - Present
+  - Coins_Tier6
+  - Diamonds_tier4
+  - Diamonds_tier5
+  - img_package_Gardening
+  - Coins_Tier2
+  - Diamonds_tier2
+  - img_package_Tool
+  - Coins_Tier5
+  - img_package_SunflowerSeed
+  - Coins_Tier4
+  - img_package_TimeSkip
+  - img_package_Terrarium
+  - Coins_Tier3
+  - Diamonds_tier6
+  - Diamonds_tier1
+  - Diamonds_tier3
+  - EventCoin_tier1
+  - Coins_Tier1
+  m_RenderDataMap: {}
+  m_Tag: AtlasShop
+  m_IsVariant: 0

@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AtlasUIUserDataSelect
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 65
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 49
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: ec6d02538169a3347b6dee6a861f728e, type: 3}
+    totalSpriteSurfaceArea: 942532
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: edc9a633ed2a7c34d9a26de6a706d76a, type: 3}
+  - {fileID: 21300000, guid: dfe53be3e13081349afd403d8690e9ae, type: 3}
+  - {fileID: 21300000, guid: 87dba3e43211e1a46bda45dbba419436, type: 3}
+  - {fileID: 21300000, guid: 616beb15d9b15be40b000235b3f3a7b3, type: 3}
+  - {fileID: 21300000, guid: 1df19a7957ed7494a84c898cf2852393, type: 3}
+  - {fileID: 21300000, guid: 88361b3a6ff34d04ba18cf4a83d9da72, type: 3}
+  - {fileID: 21300000, guid: 5f56307b4178d9a45aff7ce05462a5a2, type: 3}
+  - {fileID: 21300000, guid: 16a3b94d5644588458d56d1889dd49f0, type: 3}
+  - {fileID: 21300000, guid: 8bda9e4dd25177b4389dd544a0acfe51, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - check_01
+  - blue_bg
+  - bg_white
+  - check_02
+  - icon_coin
+  - icon_quest
+  - bg_white_empty
+  - icon_xp
+  - icon_Jewel
+  m_RenderDataMap: {}
+  m_Tag: AtlasUIUserDataSelect
+  m_IsVariant: 0
